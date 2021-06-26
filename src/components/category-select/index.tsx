@@ -7,10 +7,12 @@ import Category from "../category";
 
 type CategorySelectProps = {
   categorySelected: string;
+  setCategory: (categoryId: string) => void;
 };
 
 export default function CategorySelect({
   categorySelected,
+  setCategory,
 }: CategorySelectProps) {
   return (
     <ScrollView
@@ -25,6 +27,7 @@ export default function CategorySelect({
           title={category.title}
           icon={category.icon}
           checked={category.id === categorySelected}
+          onPress={() => setCategory(category.id)}
         />
       ))}
     </ScrollView>

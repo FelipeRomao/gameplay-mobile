@@ -26,4 +26,24 @@ export const styles = StyleSheet.create({
     color: theme.colors.heading,
     fontSize: 15,
   },
+
+  check: {
+    width: 12,
+    height: 12,
+    backgroundColor: theme.colors.secondary100,
+    alignSelf: "flex-end",
+    marginRight: 7,
+    borderColor: theme.colors.secondary50,
+    borderWidth: 2,
+    borderRadius: 3,
+  },
+
+  checked: {
+    width: 10,
+    height: 10,
+    backgroundColor: theme.colors.primary,
+    alignSelf: "flex-end",
+    marginRight: 7,
+    borderRadius: 3,
+  },
 });
