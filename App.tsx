@@ -8,7 +8,7 @@ import {
 } from "@expo-google-fonts/rajdhani";
 import AppLoading from "expo-app-loading";
 
-import SignIn from "./src/screens/signin";
+import Routes from "./src/routes";
 import Background from "./src/components/background";
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
         translucent
       />
 
-      <SignIn />
+      <Routes />
     </Background>
   );
 }
